@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+@import url(../font/transfonter.org-20220607-121701/stylesheet.css);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
+/* font-family: 'IBM Plex Sans KR' */
+*{box-sizing: border-box; font-family: 'Nanum JeomGgorCe', sans-serif; font-weight: 500;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#header{}
+#header header{
+    width: 100%; height: 210px;
+    background-color: #011640;
+    position: fixed;
+    z-index: 5;
+    transition: height 0.5s, display 0.5s;
+}
+#header header.active{
+   height: 100px;
+}
+#header header .wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+#header header .wrap .logo{
+    padding-top: 20px;
+}
+#header header .wrap .logo a{display: block;}
+#header header .wrap .logo a img{
+    width: 100px; height: 100px;
+    filter: invert(45%) sepia(6%) saturate(4677%) hue-rotate(175deg) brightness(89%) contrast(69%);
+}
+#header header.active .wrap .logo{
+    display: none;
+}
+
+
+#header header .wrap .brand{}
+#header header .wrap .brand h2{
+    /* display: block; */
+    font-size: 40px;
+    color: #4e74a6;
+}
+
+
+#header header .wrap .menubar{
+    width: 100%; height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+#header header .wrap .menubar .menubtn{}
+#header header .wrap .menubar .menubtn button{
+    background-color: transparent;
+    border: none;
+}
+#header header .wrap .menubar .menubtn img{
+    width: 30px; height: 30px;
+    filter: invert(45%) sepia(6%) saturate(4677%) hue-rotate(175deg) brightness(89%) contrast(69%);
+    cursor: pointer;
+}
+#header header .wrap .menubar .menubtn a:hover img{
+    filter: invert(75%) sepia(6%) saturate(4677%) hue-rotate(175deg) brightness(89%) contrast(69%);
+}
+
+#header header .wrap .menubar .menu{display: flex;}
+#header header .wrap .menubar .menu li{
+    padding: 0 30px 5px;
+}
+
+#header header .wrap .menubar .menu li:first-child{padding-left: 170px;}
+#header header .wrap .menubar .menu li:last-child{padding-right: 0;}
+#header header .wrap .menubar .menu li a{
+    display: block;
+    font-family: 'Nanum JeomGgorCe';
+    font-size: 32px;
+    font-weight: 700;
+    color: #4e74a6;   
+}
+#header header .wrap .menubar .menu li a:hover{
+    color: #6e94c6;
+}
+
+
+#header header .wrap .menubar .regist{display: flex; }
+#header header .wrap .menubar .regist li{padding: 0 15px;}
+#header header .wrap .menubar .regist li:last-child{padding-right: 0;}
+#header header .wrap .menubar .regist li a{display: block;}
+#header header .wrap .menubar .regist li a img{
+    width: 30px; height: 30px;
+    filter: invert(45%) sepia(6%) saturate(4677%) hue-rotate(175deg) brightness(89%) contrast(69%);
+}
+#header header .wrap .menubar .regist li a:hover img{
+    filter: invert(75%) sepia(6%) saturate(4677%) hue-rotate(175deg) brightness(89%) contrast(69%);
+}
+
+
+/*******************************/
+.menuClick_dark{
+    position: fixed;
+    z-index: 10;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+    opacity: 0;
+}
+
+.menuClick_dark.active{
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+
+.menuClick_dark .menuBox{position: relative;}
+.menuClick_dark .menuBox .close{
+    display: block;
+    position: absolute;
+    top: -60px; right: -60px;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+}
+.menuClick_dark .menuBox .close:hover{
+    color: #6e94c6;
+}
+
+.menuClick_dark .menuBox ul{}
+.menuClick_dark .menuBox ul li{}
+.menuClick_dark .menuBox ul li a{
+    color: white;
+    font-size: 36px;
+}
+.menuClick_dark .menuBox ul li a:after{
+    content: "";
+    display: block;
+    width: 0%; height: 2px;
+    background-color: #ccc;
+    transition: width 0.5s;
+}
+
+.menuClick_dark .menuBox ul li a:hover{
+    color: #4e74a6;
+}
+.menuClick_dark .menuBox ul li a:hover:after{
+    width: 100%;
+}
+
+.menuClick_dark .menuBox .opcityBox{
+    display: none;
+}
+.menuClick_dark .menuBox .regist{
+    display: flex; 
+    padding-top: 30px;
+}
+.menuClick_dark .menuBox .regist li{padding: 0 15px;}
+.menuClick_dark .menuBox .regist li:last-child{padding-right: 0;}
+.menuClick_dark .menuBox .regist li a{display: block;}
+.menuClick_dark .menuBox .regist li a img{
+    width: 30px; height: 30px;
+    filter: invert(100%);
+}
+.menuClick_dark .menuBox .regist li a:hover img{
+    filter: invert(45%) sepia(6%) saturate(4677%) hue-rotate(175deg) brightness(89%) contrast(69%);
+}
+
+
+/*******************************/
+
+
+#footer{}
+#footer footer{
+    width: 100%; height: 50px;
+    background-color: #000;
+}
+#footer footer .wrap{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer footer .wrap p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+@media (max-width: 1250px){
+    .wrap{
+        width: 100%;
+    }
+}
+@media (max-width: 999px){
+    #header header .wrap .menubar .menu{
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    #header header{
+        height: 100px;
+    }
+    #header header .wrap{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #header header .wrap .logo{
+        padding-top: 0;
+    }
+    #header header .wrap .logo a img{
+        width: 70px; height: 70px;
+    }
+    #header header .wrap .menubar{
+        justify-content: end;
+    }
+    #header header .wrap .menubar .regist{
+        display: none;
+    }
+
+    .menuClick_dark .menuBox .opcityBox{
+        display: block;
+    }
+}
+
+@media (max-width: 479px){
+    #header header{
+        height: 50px;
+    } 
+    #header header .wrap .logo a img{
+        width: 40px; height: 40px;
+    }
+}
+
+
+
+section{padding-top: 100px;}
+.subpage{
+    height: 400px;
+    background-image: url(../img/baner.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.subpage .frame{
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.subpage .frame .title{padding: 0 50px;}
+.subpage .frame .title h3{
+    font-size: 44px;
+    color: #fff;
+}
+.subpage .frame .title h3 span{
+    font-size: 48px;
+}

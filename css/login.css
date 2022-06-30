@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* font-family: 'IBM Plex Sans KR'; */
+
+#login_content{
+    max-width: 600px; min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#login_content #loginBox{}
+#login_content #loginBox h2{
+    font-family: 'IBM Plex Sans KR'; 
+    padding: 50px 0 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;      
+    font-size: 28px;
+}
+#login_content #loginBox ul{padding: 20px 10px 10px;}
+#login_content #loginBox ul li{padding-bottom: 10px;}
+#login_content #loginBox ul li input{
+    font-family: 'IBM Plex Sans KR'; 
+    width: 100%; height: 40px;
+    border: none;
+    border-bottom: 1px solid #4e74a6;
+    padding: 0 10px;
+    outline-color: #4e74a6;
+}
+
+#login_content #loginBox #loginBtn{
+    padding: 10px 0 40px;
+    display: flex;
+    text-align: center;
+}
+#login_content #loginBox #loginBtn button{
+    font-family: 'IBM Plex Sans KR'; 
+    width: calc(50% - 20px); height: 40px;
+    margin: 0 10px;
+    border: 1px solid #4e74a6;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    color: #4e74a6;
+    cursor: pointer;
+}
+#login_content #loginBox #loginBtn button:hover{
+    background-color: #4e74a6;
+    color: #fff;
+}

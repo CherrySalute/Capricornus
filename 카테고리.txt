@@ -1,0 +1,73 @@
+[공통 - header/footer]
+{view}
+ - header.html 
+    //  menu => brand.html
+                product.html
+                community.html
+                shop.html
+
+    //  regist => login.html 
+                     => (회원가입) member.html
+                     => (로그인)
+                  cart.html
+                  search.html
+
+ - footer.html
+ 
+{css}
+ - common.css
+ - login.css
+
+{js}
+ - common.js
+ - login.js
+
+
+/////////////////////////////////
+
+[메인 페이지 - main]
+{view}
+ - index.html
+
+{css}
+ - index.css
+
+{js}
+ - index.js
+ 
+/////////////////////////////////
+
+[서브 페이지 - brand]
+{view}
+ - brand.html
+
+{css}
+ - brand.css
+
+{js}
+ - brand.js
+
+/////////////////////////////////
+
+[서브 페이지 - product]
+{view}
+ - product.html
+    //  product_detail.html
+
+{css}
+ - product.css
+
+{js}
+ - product.js
+
+/////////////////////////////////
+
+[서브 페이지 - community]
+{view}
+ - community.html
+
+{css}
+ - community.css
+
+{js}
+ - community.js

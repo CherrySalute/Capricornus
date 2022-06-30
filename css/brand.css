@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+#brand{
+    padding-top: 210px;
+    background-color: #244673;
+}
+#brand .wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#brand .wrap h1{
+    font-size: 80px;
+    color: #ddd;
+    padding: 50px 0 150px;
+}
+#brand .wrap h1::before{
+    content: "";
+    display: block;
+    width: 100px; height: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ddd;
+    margin-top: 10px;
+}
+#brand .wrap .num{
+    width: 100%; height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px 50px;
+}
+#brand .wrap .num .imgPart{
+    width: calc(50% - 20px); 
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #aaa;
+}
+#brand .wrap .num1 .imgPart{background-image: url(../img/sub/brand_passion.jpg);}
+#brand .wrap .num2 .imgPart{background-image: url(../img/sub/brand_silenziosamente.jpg);}
+#brand .wrap .num3 .imgPart{background-image: url(../img/sub/brand_year.jpg);}
+
+
+#brand .wrap .num .textPart{
+    width: calc(50% - 20px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    padding: 10px;
+}
+#brand .wrap .num .textPart h2{
+    padding: 10px 0 30px;
+    font-size: 48px;
+    
+}
+#brand .wrap .num .textPart p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+    font-family: 'IBM Plex Sans KR'
+}
+
+
+#colors{
+    border-top: 2px solid #ddd;
+    background-color: #244673;
+}
+#colors .wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#colors .wrap h1{
+    font-size: 80px;
+    color: #ddd;
+    padding: 50px 0 150px;
+}
+#colors .wrap h1::before{
+    content: "";
+    display: block;
+    width: 100px; height: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ddd;
+    margin-top: 10px;
+}
+#colors .wrap .box{
+    width: 100%; height: 700px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #7e9cc44d;
+    padding: 10px;
+}
+#colors .wrap .box .imgPart{
+    width: calc(50% - 20px); height: 100%;
+    background-image: url(../img/color.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+#colors .wrap .box .textPart{
+    width: calc(50% - 20px); height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-size: 44px;
+}
+#colors .wrap .box .textPart p{
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 400;
+}
+#colors .wrap .box .textPart p:nth-child(1){color: #011640;}
+#colors .wrap .box .textPart p:nth-child(2){color: #244673;}
+#colors .wrap .box .textPart p:nth-child(3){color: #4E74A6; padding-bottom: 20px;}
+
+#colors .wrap .box .textPart span{
+    padding-top: 20px;
+    font-size: 36px;    
+    color: #ddd;
+    font-weight: 400;
+}
+
+@media (max-width: 1023px){
+    #brand .wrap .num{
+        height: 100%;
+    }
+}
+@media (max-width: 767px){
+    #brand{padding-top: 80px;}
+    #brand .wrap h1{font-size: 68px; padding-bottom: 80px;}
+    #brand .wrap .num .textPart h2{font-size: 36px;}
+    #brand .wrap .num .textPart p{font-size: 14px;}
+
+    #colors .wrap h1{font-size: 68px; padding-bottom: 80px;}
+    #colors .wrap .box{justify-content: space-between;}
+    #colors .wrap .box .textPart{padding: 10px;}
+    #colors .wrap .box .textPart p{font-size: 36px;}
+    #colors .wrap .box .textPart span{font-size: 30px}
+}
+@media (max-width: 479px){
+    #brand{padding-top: 20px;}
+    #brand .wrap h1{font-size: 48px; padding-bottom: 50px;}
+    #brand .wrap .num{
+        flex-wrap: nowrap;       
+        flex-direction: column;
+    }
+    #brand .wrap .num2{
+        flex-direction: column-reverse;
+    }
+    #brand .wrap .num .imgPart{
+        width: 100%; height: 250px;
+    }
+    #brand .wrap .num .textPart{
+        width: 100%; height: 100%;
+    }
+    #brand .wrap .num .textPart h2{font-size: 32px; padding-top: 20px;}
+
+
+    #colors .wrap h1{font-size: 48px; padding-bottom: 50px;}
+    #colors .wrap .box{
+        flex-direction: column;
+    }
+    #colors .wrap .box{height: 100%;}
+    #colors .wrap .box .imgPart{
+        width: 100%; height: 800px;
+        background-size: cover;
+    }
+    #colors .wrap .box .textPart{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    #colors .wrap .box .textPart span{font-size: 28px;}
+}
