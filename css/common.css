@@ -251,7 +251,7 @@ a{text-decoration: none;}
 
 
 
-section{padding-top: 100px;}
+section.common{padding-top: 100px;}
 .subpage{
     height: 400px;
     background-image: url(../img/baner.jpg);
