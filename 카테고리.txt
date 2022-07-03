@@ -71,3 +71,15 @@
 
 {js}
  - community.js
+
+/////////////////////////////////
+
+[서브 페이지 - shop]
+{view}
+ - shop.html
+
+{css}
+ - shop.css
+
+{js}
+ - shop.js

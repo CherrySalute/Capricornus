@@ -43,3 +43,22 @@ section{padding-top: 210px;}
 }
 #communityBox ul li span.field2{width: 100px;}
 #communityBox ul li span.field3{width: 150px;}
+
+@media (max-width: 1199px){
+    #communityBox{
+        width: 100%;
+    }
+}
+@media (max-width: 1023x){
+    
+}
+@media (max-width: 767px){
+    section{padding-top: 100px;}
+}
+@media (max-width: 479px){
+    #communityBox ul li span{font-size: 14px;}
+    #communityBox ul li:first-child span{font-size: 18px;}
+    #communityBox ul li span.field1{width: calc(100% - 170px);}
+    #communityBox ul li span.field2{width: 70px;}
+    #communityBox ul li span.field3{width: 100px;}
+}
