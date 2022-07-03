@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $("#header").load("./header.html");
+
 
     
     $(window).scroll(function () { 
@@ -36,5 +36,10 @@ $(document).ready(function(){
     })
 
 
-    $("#footer").load("./footer.html");
-})
+
+
+    
+ 
+});
+
+

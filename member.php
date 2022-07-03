@@ -12,9 +12,12 @@
 </head>
 <body>
 
-    <div id="header"></div>
+    <header>
+        <?php include "./header.php" ?>
+    </header>
 
-
+    <?php include "./menupopup.php"?>
+    
     <section class="common">
         <div class="subpage">
             <div class="frame">
@@ -26,7 +29,7 @@
 
         <div id="member_content">
             <div id="joinBox">
-                <form action="" name="memberForm" method="POST">
+                <form action="./member_insert.php" name="memberForm" method="POST">
                     <h2>:: 회원가입</h2>
 
                     <div class="form">
@@ -85,7 +88,10 @@
         </div>
     </section>
 
-    <div id="footer"></div>
+
+    <footer>
+        <?php include "./footer.php" ?>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/common.js"></script>

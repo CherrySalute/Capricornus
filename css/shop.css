@@ -38,23 +38,24 @@
 #shopList{
     margin: 50px 0;
 }
-#shopList .wrap{
+#shopList .shopwrap{
     width: 1000px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
-#shopList .wrap .cont{
+#shopList .shopwrap .cont{
     width: calc(25% - 20px); height: 450px;
     margin: 20px 10px 30px;
     border-bottom: 1px solid #ccc;
 }
-#shopList .wrap .cont .imgPart{}
-#shopList .wrap .cont .imgPart:hover{
+#shopList .shopwrap .cont .imgPart{}
+#shopList .shopwrap .cont .imgPart:hover{
     box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.35);
 }
-#shopList .wrap .cont .imgPart img{
+#shopList .shopwrap .cont .imgPart img{
     /* background-color: #aaa; */
     width: 100%; height: 200px;
     background-size: cover;
@@ -63,60 +64,60 @@
     cursor: pointer;
 }
 
-#shopList .wrap .cont .txtPart{
+#shopList .shopwrap .cont .txtPart{
     padding-top: 20px;
     text-align: center;
 
 }
-#shopList .wrap .cont .txtPart p{
+#shopList .shopwrap .cont .txtPart p{
     font-family: 'IBM Plex Sans KR';
     font-weight: 300;
 }
-#shopList .wrap .cont .txtPart p:nth-child(1){
+#shopList .shopwrap .cont .txtPart p:nth-child(1){
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 20px;
 }
-/* #shopList .wrap .cont .txtPart p:nth-child(2){
+/* #shopList .shopwrap .cont .txtPart p:nth-child(2){
     font-size: 14px;
     color: #555;
     padding-bottom: 20px;
     word-break: keep-all;
 } */
-#shopList .wrap .cont .txtPart p:nth-child(2){
+#shopList .shopwrap .cont .txtPart p:nth-child(2){
     font-size: 18px;
     font-weight: 700;
     color: #4E74A6;
     padding-bottom: 10px;
 }
-#shopList .wrap .cont .txtPart a{
+#shopList .shopwrap .cont .txtPart a{
     display: block;
     color: black;
     font-size: 10px;
     font-weight: 500;
     font-family: 'IBM Plex Sans KR';
 }
-#shopList .wrap .cont .txtPart a:hover{
+#shopList .shopwrap .cont .txtPart a:hover{
     color: #4E74A6;
 }
 
 
 @media (max-width: 1199px){}
 @media (max-width: 1023px){
-    #shopList .wrap{
+    #shopList .shopwrap{
         width: 100%
     }
-    #shopList .wrap .cont{
+    #shopList .shopwrap .cont{
         width: calc(100% / 3 - 20px);
     }
 }
 @media (max-width: 767px){
-    #shopList .wrap .cont{
+    #shopList .shopwrap .cont{
         width: calc(50% - 20px);
     }
 }
 @media (max-width: 479px){
-    #shopList .wrap .cont{
+    #shopList .shopwrap .cont{
         width: 100%;
     }
 }

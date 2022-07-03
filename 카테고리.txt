@@ -7,7 +7,7 @@
                 shop.html
 
     //  regist => login.html 
-                     => (회원가입) member.html
+                     => (회원가입) member.php -> js/member.js -> member_insert.php
                      => (로그인)
                   cart.html
                   search.html

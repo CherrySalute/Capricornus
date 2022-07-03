@@ -12,9 +12,11 @@
 </head>
 <body>
     
+    <header>
+        <?php include "./header.php" ?>
+    </header>
     
-    <div id="header"></div>
-
+    <?php include "./menupopup.php"?>
     <main>
         <ul>
             <!-- <li><img src="./img/main_bread_01.jpg" alt=""></li>
@@ -126,7 +128,9 @@
         </div>        
     </section>
 
-    <div id="footer"></div>
+    <footer>
+        <?php include "./footer.php" ?>
+    </footer>
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/common.js"></script>

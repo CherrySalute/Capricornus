@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     function start(evt){
         for(i in evt){
-            $("#shopList .wrap").append(
+            $("#shopList .shopwrap").append(
                 `
                 <div class="cont">
                     <div class="imgPart">

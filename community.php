@@ -12,8 +12,10 @@
 </head>
 <body>
     
-    <div id="header"></div>
-
+    <header>
+        <?php include "./header.php" ?>
+    </header>
+    <?php include "./menupopup.php"?>
 
     <section>
         <div id="communityBox">
@@ -40,7 +42,10 @@
         </div>
     </section>
 
-    <div id="footer"></div>
+
+    <footer>
+        <?php include "./footer.php" ?>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/common.js"></script>

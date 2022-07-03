@@ -12,8 +12,14 @@
 </head>
 <body>
 
-    <div id="header"></div>
+<?php
+    // if(isset($_GET[]))
+?>
+    <header>
+        <?php include "./header.php" ?>
+    </header>
 
+    <?php include "./menupopup.php"?>
 
     <section class="common">
         <div class="subpage">
@@ -26,7 +32,7 @@
 
         <div id="login_content">
             <div id="loginBox">
-                <form action="" name="loginForm" method="post">
+                <form action="./login_ok.php" name="loginForm" method="post">
                     <h2>:: 로그인</h2>
                     
                     <ul>
@@ -35,14 +41,16 @@
                     </ul>
                     <div id="loginBtn">
                         <button type="button" onclick="chk_input();">로그인</button>
-                        <button type="button" onclick="location.href='./member.html'">회원가입</button>
+                        <button type="button" onclick="location.href='./member.php'">회원가입</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <div id="footer"></div>
+    <footer>
+        <?php include "./footer.php" ?>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/common.js"></script>
