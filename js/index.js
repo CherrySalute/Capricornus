@@ -5,7 +5,7 @@ $(document).ready(function () {
     for(i in $mainImage){
         // console.log(i);
         $("main ul").append(`
-            <li><img src="../img/${$mainImage[i]}.jpg" alt=""></li>
+            <li><img src="./img/${$mainImage[i]}.jpg" alt=""></li>
         `);
     }
 

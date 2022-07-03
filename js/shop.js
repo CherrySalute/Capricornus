@@ -11,7 +11,7 @@ $(document).ready(function () {
                 `
                 <div class="cont">
                     <div class="imgPart">
-                        <img src="../img/shop/${evt[i][0]}" alt="">
+                        <img src="./img/shop/${evt[i][0]}" alt="">
                     </div>
                     <div class="txtPart">
                         <p>${evt[i][1]}</p>
