@@ -43,13 +43,16 @@ main ul li img{
 #Brand .wrap .point{
     width: 20px; height: 20px;
     /* background-color: rgba(0, 0, 0, 0.3); */
-    background-color: #fff;
+    background-color: #aaa;
     border-radius: 50%;
     /* position: absolute; */
     position: relative;
     cursor: pointer;
 }
-#Brand .wrap .point.active{background-color: yellow;}
+#Brand .wrap .point.active{
+    background-color: yellow;
+    box-shadow: 0 0 8px 8px lightyellow;
+}
 
 /* #Brand .wrap .point1{left: 360px; top: 360px;} */
 #Brand .wrap .point1{left: 355px; top: 350px;}

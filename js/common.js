@@ -11,14 +11,14 @@ $(document).ready(function(){
         // console.log($width);
         if($width > 767){
             if(scroll >= 40){
-                $("#header header").addClass("active");
+                $("header").addClass("active");
             }
             else{
-                $("#header header").removeClass("active");
+                $("header").removeClass("active");
             }
         }    
         else{
-            $("#header header").removeClass("active");
+            $("header").removeClass("active");
         }     
     });
 

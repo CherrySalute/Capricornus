@@ -64,7 +64,11 @@
 
 [서브 페이지 - community]
 {view}
- - community.html
+ - (리스트) community.html
+ - (작성/admin) board_form.php => js/community.js -submit() => board_insert.php
+ - (상세보기) board_view.php + board_download.php(다운로드)
+ - (수정하기) board_edit_form.php => js/community.js -submit() => board_edit.php
+ - (삭제하기) board_delete.php
 
 {css}
  - community.css
