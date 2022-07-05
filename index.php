@@ -9,6 +9,11 @@
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
     
