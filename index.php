@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
     <script src="./js/wow.js"></script>
     <script>
@@ -37,8 +38,8 @@
                 <div class="point point2"></div>
                 <div class="point point3"></div>     
              </div>
-            <h2>Brand</h2>
-            <div class="box">
+            <h2 class="wow fadeInUp">Brand</h2>
+            <div class="box wow fadeInUp" data-wow-delay="0.5s">
                 <div class="cont active">
                     <h3>수호신 판</h3>
                     <p class="tag">#열정의신 #광기의신</p>
@@ -71,9 +72,9 @@
             <img src="./img/capricornus.svg" alt="">
         </div>
         <div class="wrap">
-            <h2>Products</h2>
+            <h2 class="wow fadeInUp">Products</h2>
             <div class="gridBox">
-                <div class="box box1">
+                <div class="box box1 wow fadeInUp">
                     <div class="imgPart">
                         <div class="textPart">
                             <p>BREAD</p>
@@ -81,7 +82,7 @@
                     </div>                
                 </div>
     
-                <div class="box box2">
+                <div class="box box2 wow fadeInUp">
                     <div class="imgPart">
                         <div class="textPart">
                             <p>CAKE</p>
@@ -89,7 +90,7 @@
                     </div>                
                 </div>
     
-                <div class="box box3">
+                <div class="box box3 wow fadeInUp">
                     <div class="imgPart">
                         <div class="textPart">
                             <p>CHOCOLATE</p>
@@ -97,7 +98,7 @@
                     </div>                
                 </div>
     
-                <div class="box box4">
+                <div class="box box4 wow fadeInUp">
                     <div class="imgPart">
                         <div class="textPart">
                             <p>COOKIE</p>
@@ -105,7 +106,7 @@
                     </div>                
                 </div>
     
-                <div class="box box5">
+                <div class="box box5 wow fadeInUp">
                     <div class="imgPart">
                         <div class="textPart">
                             <p>COFFEE</p>
@@ -119,8 +120,8 @@
     <section id="sns">
         <div class="bg_dark">
             <div class="wrap">
-                <h2>SNS</h2>
-                <div class="cont">
+                <h2 class="wow fadeInUp">SNS</h2>
+                <div class="cont wow fadeInDown">
                     <div class="box box1"></div>
                     <div class="box box2"></div>
                     <div class="box box3"></div>

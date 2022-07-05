@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
     <section id="detailMenu">
         <div class="wrap">
             <h1>PRODUCT</h1>
-            <div class="productMenu">
+            <div class="productMenu wow fadeInUp">
                 <div><a class="Bread active" href="">Bread</a></div>
                 <div><a class="Cake" href="">Cake</a></div>
                 <div><a class="Chocolate" href="">Chocolate</a></div>
@@ -33,7 +34,7 @@
     </section>
 
     <section id="productList">
-        <div class="wrap">
+        <div class="wrap wow fadeInUp" data-wow-delay="0.5s">
 
         </div>
     </section>
@@ -52,5 +53,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/product.js"></script>
+    <script src="./js/wow.js"></script>
+ 
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
